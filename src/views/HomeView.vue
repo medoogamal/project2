@@ -171,7 +171,7 @@ watch(
         <!-- start featured courses -->
         <!-- title -->
         <div class="lg:mx-40 2xl:mx-60 mx-auto">
-          <div class="cursor-pointer -mx-10 mb-10">
+          <div class="cursor-pointer mx-2 my-2">
             <h5
               id="title"
               :class="languageStore.direction == 'ltr' ? 'after:left-0' : 'after:right-0'"
