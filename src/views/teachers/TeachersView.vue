@@ -23,21 +23,13 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[80px] mx-auto mb-5"
-              src="/Teacher Feature/feature-1.png"
-              alt="investment"
-            />
+            <img class="w-[80px] mx-auto mb-5" src="/images/feature-1.png" alt="investment" />
             <p class="text-xs">Agartha Studio:Your Creative Teaching Space.</p>
           </div>
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[80px] mx-auto mb-5"
-              src="/Teacher Feature/feature-2.png"
-              alt="investment"
-            />
+            <img class="w-[80px] mx-auto mb-5" src="/images/feature-2.png" alt="investment" />
             <p class="text-xs">
               A E-store and E-library to display and sell your educational products.
             </p>
@@ -45,11 +37,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[80px] mx-auto mb-5"
-              src="/Teacher Feature/feature-3.png"
-              alt="investment"
-            />
+            <img class="w-[80px] mx-auto mb-5" src="/images/feature-3.png" alt="investment" />
             <p class="text-xs">
               Experts and consulting:start as an expert in the consulting department.
             </p>
@@ -57,11 +45,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[75px] mx-auto mb-5"
-              src="/Teacher Feature/feature-4.png"
-              alt="investment"
-            />
+            <img class="w-[75px] mx-auto mb-5" src="/images/feature-4.png" alt="investment" />
             <p class="text-xs">
               Interactive events and discussions that bring you closer to students and increase
               their interaction
@@ -70,11 +54,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[105px] mt-1 mx-auto mb-5"
-              src="/Teacher Feature/feature-5.png"
-              alt="investment"
-            />
+            <img class="w-[105px] mt-1 mx-auto mb-5" src="/images/feature-5.png" alt="investment" />
             <p class="text-xs">
               An opportunity to join the annual Agartha camps in the Arab countries and network with
               other experts.
@@ -83,31 +63,19 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[75px] mx-auto mb-2"
-              src="/Teacher Feature/feature-6.png"
-              alt="investment"
-            />
+            <img class="w-[75px] mx-auto mb-2" src="/images/feature-6.png" alt="investment" />
             <p class="text-xs">Marketing campaigns and promotional programs (optional)</p>
           </div>
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[80px] mx-auto mb-5"
-              src="/Teacher Feature/feature-7.png"
-              alt="investment"
-            />
+            <img class="w-[80px] mx-auto mb-5" src="/images/feature-7.png" alt="investment" />
             <p class="text-xs">percentage that increases with your productivity and popularity.</p>
           </div>
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[95px] mx-auto mb-5"
-              src="/Teacher Feature/feature-8.png"
-              alt="investment"
-            />
+            <img class="w-[95px] mx-auto mb-5" src="/images/feature-8.png" alt="investment" />
             <p class="text-xs">
               Additional income from tickets for online conferences and seminars targeting your
               interested audience.
@@ -116,11 +84,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[90px] mx-auto mb-5"
-              src="/Teacher Feature/feature-9.png"
-              alt="investment"
-            />
+            <img class="w-[90px] mx-auto mb-5" src="/images/feature-9.png" alt="investment" />
             <p class="text-xs -mt-3">
               Protect and secure your course content from unwanted downloading, theft or spread.
             </p>
@@ -128,11 +92,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[75px] mx-auto mb-5"
-              src="/Teacher Feature/feature-10.png"
-              alt="investment"
-            />
+            <img class="w-[75px] mx-auto mb-5" src="/images/feature-10.png" alt="investment" />
             <p class="text-xs">
               Unlimited storage of all your lectures, resources and files for free.
             </p>
@@ -140,11 +100,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           <div
             class="feature-card flex flex-col gap-5 dark:before:bg-black before:bg-[#eee] relative w-[170px] h-[225px] border shadow-xl p-2 py-4 rounded-lg z-10 m-2"
           >
-            <img
-              class="w-[80px] mx-auto mb-5"
-              src="/Teacher Feature/feature-11.png"
-              alt="investment"
-            />
+            <img class="w-[80px] mx-auto mb-5" src="/images/feature-11.png" alt="investment" />
             <p class="text-xs">
               freely set the prices of your products and effectively compete in the market.
             </p>
@@ -154,7 +110,7 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
           >
             <img
               class="w-[85px] mt-1 mx-auto mb-[23px]"
-              src="/Teacher Feature/feature-12.png"
+              src="/images/feature-12.png"
               alt="investment"
             />
             <p class="text-xs">
@@ -173,7 +129,6 @@ import OurTeachers from '../../components/sections/OutTeachers.vue'
 <style scoped>
 .feature-card:after {
   content: '';
-  /* border-right: 1px solid #b6b5b5; */
   border-right: 2px solid #bfbfe1;
   border-left: 2px solid #bfbfe1;
   height: 0;

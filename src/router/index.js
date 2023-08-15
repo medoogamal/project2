@@ -10,7 +10,7 @@ import EventsView from '../views/events/EventsView.vue'
 import LibraryView from '../views/library/LibraryView.vue'
 import EBooksView from '../views/library/books/EBooksView.vue'
 import MentorView from '../views/mentor/MentorView.vue'
-import TeachersView from '../views/services/TeachersView.vue'
+import TeachersView from '../views/teachers/TeachersView.vue'
 import ContactusView from '../views/services/ContactusView.vue'
 import AboutusView from '../views/services/AboutusView.vue'
 
