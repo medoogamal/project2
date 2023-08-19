@@ -1,6 +1,7 @@
 <script setup>
 import MainLayout from '../layouts/MainLayout.vue'
 import { useLanguageStore } from '../../stores/store.js'
+import VLazyImage from 'v-lazy-image'
 const languageStore = useLanguageStore()
 </script>
 <template>
@@ -20,7 +21,8 @@ const languageStore = useLanguageStore()
               id="box"
               class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
             >
-              <img
+              <v-lazy-image
+                src-placeholder="/images/logo.png"
                 class="transition-all duration-500 w-[160px] mx-auto mb-2"
                 src="https://kemet.agartha.academy/static/library/assets/img/icon/ebooks.png"
                 alt=""
@@ -32,7 +34,8 @@ const languageStore = useLanguageStore()
             id="box"
             class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
           >
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="transition-all duration-500 w-[160px] mx-auto mb-2"
               src="https://kemet.agartha.academy/static/library/assets/img/icon/AudioBooks.png"
               alt=""
@@ -43,7 +46,8 @@ const languageStore = useLanguageStore()
             id="box"
             class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
           >
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="transition-all duration-500 w-[160px] mx-auto mb-2"
               src="https://kemet.agartha.academy/static/library/assets/img/icon/music.png"
               alt=""
@@ -54,7 +58,8 @@ const languageStore = useLanguageStore()
             id="box"
             class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
           >
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="transition-all duration-500 w-[160px] mx-auto mb-2"
               src="https://kemet.agartha.academy/static/library/assets/img/icon/film.png"
               alt=""
@@ -66,7 +71,8 @@ const languageStore = useLanguageStore()
               id="box"
               class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
             >
-              <img
+              <v-lazy-image
+                src-placeholder="/images/logo.png"
                 class="transition-all duration-500 w-[160px] mx-auto mb-2"
                 src="https://kemet.agartha.academy/static/library/img/icon/maps.png"
                 alt=""
@@ -78,7 +84,8 @@ const languageStore = useLanguageStore()
             id="box"
             class="text-center w-fit h-[235px] cursor-pointer shadow-lg dark:shadow-blue-500/50 p-3 m-2 rounded-xl"
           >
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="transition-all duration-500 w-[160px] mx-auto mb-2"
               src="https://kemet.agartha.academy/static/library/img/icon/EarthNow-01.png"
               alt=""
@@ -103,28 +110,32 @@ const languageStore = useLanguageStore()
           class="flex gap-1 md:w-[80%] w-[90%] mx-auto my-10 relative after:!-top-[5%] md:after:!top-[65%] lg:after:!top-[88%]"
         >
           <div class="book relative">
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="w-full h-full"
               src="https://agarthaacademy.b-cdn.net/library-e-book/Agartha-Kemet/Reality-tr119/e_book.jpg"
               alt=""
             />
           </div>
           <div class="book relative">
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="w-full h-full"
               src="https://agarthaacademy.b-cdn.net/library-e-book/batoul/Reality-Cr118/e_book.jpg"
               alt=""
             />
           </div>
           <div class="book relative">
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="w-full h-full"
               src="https://agarthaacademy.b-cdn.net/library-e-book/nabil/The-Victor105/e_book.jpg"
               alt=""
             />
           </div>
           <div class="book relative">
-            <img
+            <v-lazy-image
+              src-placeholder="/images/logo.png"
               class="w-full h-full"
               src="https://agarthaacademy.b-cdn.net/library-e-book/nabil/Old-World-104/e_book.jpg"
               alt=""

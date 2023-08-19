@@ -1,6 +1,7 @@
 <script setup>
 import Calender from 'vue-material-design-icons/Calendar.vue'
 import Clock from 'vue-material-design-icons/Clock.vue'
+import VLazyImage from 'v-lazy-image'
 import { toRefs } from 'vue'
 import { useLanguageStore } from '../../stores/store.js'
 import Map from 'vue-material-design-icons/Map.vue'
@@ -16,7 +17,12 @@ const { text, image } = toRefs(props)
   <div class="w-fit mx-auto" :dir="languageStore.direction">
     <div class="bg-white dark:bg-black rounded-lg flex overflow-hidden items-center">
       <div class="w-[210px] h-[210px] overflow-hidden relative cursor-pointer">
-        <img :src="image" alt="" class="w-[210px] h-[210px]" />
+        <v-lazy-image
+          src-placeholder="/images/logo.png"
+          :src="image"
+          alt=""
+          class="w-[210px] h-[210px]"
+        />
       </div>
       <div>
         <div>

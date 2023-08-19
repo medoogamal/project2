@@ -73,12 +73,14 @@ const currentRoute = ref(`/${router.currentRoute.value.path.slice(1)}`)
             </li>
           </div>
         </router-link>
-        <div id="link" class="flex items-center justify-between hover:text-orange-300">
-          <ChevronLeft />
-          <li class="cursor-pointer hover:text-[#fea555]">
-            {{ languageStore.lang.header['article'] }}
-          </li>
-        </div>
+        <router-link :to="`/${languageStore.langUrl}/blogs`">
+          <div id="link" class="flex items-center justify-between hover:text-orange-300">
+            <ChevronLeft />
+            <li class="cursor-pointer hover:text-[#fea555]">
+              {{ languageStore.lang.header['article'] }}
+            </li>
+          </div>
+        </router-link>
         <router-link :to="`/${languageStore.langUrl}/consultant`">
           <div id="link" class="flex items-center justify-between hover:text-orange-300">
             <ChevronLeft />
@@ -104,11 +106,13 @@ const currentRoute = ref(`/${router.currentRoute.value.path.slice(1)}`)
           class="z-20 px-3 py-2 dark:bg-[#07294d] bg-[#f7f5f5] rounded dark:text-white mx-2 my-1"
         >
           <div class="relative" id="subLinks">
-            <li
-              class="mb-1.5 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:-translate-x-3"
-            >
-              pricing
-            </li>
+            <router-link :to="`/${languageStore.langUrl}/blogs/pricing`">
+              <li
+                class="mb-1.5 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:-translate-x-3"
+              >
+                pricing
+              </li>
+            </router-link>
             <router-link :to="`/${languageStore.langUrl}/services/teachers`">
               <li
                 class="mb-1.5 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:-translate-x-3"
@@ -116,7 +120,7 @@ const currentRoute = ref(`/${router.currentRoute.value.path.slice(1)}`)
                 {{ languageStore.lang.footer['teachers'] }}
               </li>
             </router-link>
-            <router-link :to="`/${languageStore.langUrl}/services/teachers`">
+            <router-link :to="`/${languageStore.langUrl}/services/contact-us`">
               <li
                 class="mb-1.5 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:-translate-x-3"
               >

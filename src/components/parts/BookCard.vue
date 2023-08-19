@@ -1,5 +1,6 @@
 <script setup>
 import Star from 'vue-material-design-icons/Star.vue'
+import VLazyImage from 'v-lazy-image'
 import { toRefs } from 'vue'
 import { useLanguageStore } from '../../stores/store.js'
 import MainButton from './MainButton.vue'
@@ -18,7 +19,12 @@ const { text, image, price, author } = toRefs(props)
   <div class="w-fit mx-auto" :dir="languageStore.direction">
     <div class="bg-white dark:bg-black rounded-lg">
       <div class="w-[300px] h-[300px] overflow-hidden relative rounded-t-lg cursor-pointer">
-        <img :src="image" alt="" class="w-[300px] h-[280px]" />
+        <v-lazy-image
+          src-placeholder="/images/logo.png"
+          :src="image"
+          alt=""
+          class="w-[300px] h-[280px]"
+        />
         <div
           id="price"
           :class="languageStore.direction == 'ltr' ? 'right-6' : 'left-6'"

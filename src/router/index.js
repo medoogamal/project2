@@ -13,6 +13,8 @@ import MentorView from '../views/mentor/MentorView.vue'
 import TeachersView from '../views/teachers/TeachersView.vue'
 import ContactusView from '../views/services/ContactusView.vue'
 import AboutusView from '../views/services/AboutusView.vue'
+import BlogsView from '../views/blogs/BlogsView.vue'
+import PricingView from '../views/blogs/PricingView.vue'
 
 const supportedLanguages = ['en', 'ar']
 
@@ -26,6 +28,7 @@ const router = createRouter({
     {
       path: '/:lang',
       component: HomeView,
+      meta: { title: 'Agartha Academy' },
       beforeEnter: (to, from, next) => {
         const langParam = to.params.lang
         if (supportedLanguages.includes(langParam)) {
@@ -44,7 +47,8 @@ const router = createRouter({
     },
     {
       path: '/:lang/library',
-      component: LibraryView
+      component: LibraryView,
+      meta: { title: 'Agartha Academy | Library' }
     },
     {
       path: '/:lang/library',
@@ -63,6 +67,21 @@ const router = createRouter({
               component: EBooksView
             }
           ]
+        }
+      ]
+    },
+    {
+      path: '/:lang/blogs',
+      component: BlogsView,
+      meta: { title: 'Agartha Academy | Blog' }
+    },
+    {
+      path: '/:lang/blogs',
+      children: [
+        {
+          path: 'pricing',
+          name: 'blogs.pricing',
+          component: PricingView
         }
       ]
     },
@@ -127,6 +146,17 @@ const router = createRouter({
       component: NotFoundView
     }
   ]
+})
+router.beforeEach((to, from, next) => {
+  // Get the page title from the route meta data that we have defined
+  // See further down below for how we setup this data
+  const title = to.meta.title
+  // If the route has a title, set it as the page title of the document/page
+  if (title) {
+    document.title = title
+  }
+  // Continue resolving the route
+  next()
 })
 
 export default router

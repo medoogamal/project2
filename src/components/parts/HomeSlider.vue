@@ -1,6 +1,7 @@
 <script setup>
 import { toRefs } from 'vue'
 import { useLanguageStore } from '../../stores/store.js'
+import VLazyImage from 'v-lazy-image'
 
 const languageStore = useLanguageStore()
 const props = defineProps({
@@ -14,7 +15,12 @@ const { image, text, subText } = toRefs(props)
 <template>
   <div class="relative w-full md:h-[600px] h-[190px] overflow-hidden">
     <div class="img relative">
-      <img :src="image" class="w-full md:h-[600px] h-[190px]" alt="" />
+      <v-lazy-image
+        src-placeholder="/images/logo.png"
+        :src="image"
+        class="w-full md:h-[600px] h-[190px]"
+        alt=""
+      />
     </div>
     <div
       id="text"
@@ -29,7 +35,7 @@ const { image, text, subText } = toRefs(props)
       <div id="join" class="">
         <router-link
           to=""
-          class="md:py-3 md:px-4 py-1 px-2 bg-[#e2ce4d] rounded-lg hover:bg-[#bdac3c] font-bold"
+          class="md:py-3 md:px-4 py-1 px-2 bg-[#ffc600] rounded-lg hover:bg-[#bdac3c] font-bold"
           >Start Trial now</router-link
         >
       </div>

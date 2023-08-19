@@ -128,7 +128,9 @@ onUnmounted(() => {
               {{ lang.header['library'] }}
             </li>
           </router-link>
-          <li class="cursor-pointer hover:text-[#fea555]">{{ lang.header['article'] }}</li>
+          <router-link :to="`/${selectedLanguage}/blogs`">
+            <li class="cursor-pointer hover:text-[#fea555]">{{ lang.header['article'] }}</li>
+          </router-link>
           <router-link :to="`/${selectedLanguage}/consultant`">
             <li class="cursor-pointer hover:text-[#fea555]">{{ lang.header['mentor'] }}</li>
           </router-link>
@@ -145,11 +147,13 @@ onUnmounted(() => {
               class="absolute z-20 bg-[#07294d] w-[150px] p-3 rounded text-white -left-2 top-8"
             >
               <div class="relative" id="subLinks">
-                <li
-                  class="mb-1 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:translate-x-3"
-                >
-                  pricing
-                </li>
+                <router-link :to="`/${selectedLanguage}/blogs/pricing`">
+                  <li
+                    class="mb-1 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:translate-x-3"
+                  >
+                    pricing
+                  </li>
+                </router-link>
                 <router-link :to="`/${selectedLanguage}/services/teachers`">
                   <li
                     class="mb-1 text-sm cursor-pointer transition-all duration-500 hover:text-[#fea555] hover:translate-x-3"

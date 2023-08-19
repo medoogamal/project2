@@ -1,6 +1,7 @@
 <script setup>
 import { ref, toRefs, watchEffect } from 'vue'
 import { useLanguageStore } from '../../stores/store.js'
+import VLazyImage from 'v-lazy-image'
 
 const languageStore = useLanguageStore()
 const props = defineProps({
@@ -24,7 +25,7 @@ watchEffect(() => {
 <template>
   <div class="relative">
     <div class="relative w-full md:h-[340px] h-[170px] overflow-hidden img">
-      <img :src="image" class="w-full h-full" alt="" />
+      <v-lazy-image src-placeholder="/images/logo.png" :src="image" class="w-full h-full" alt="" />
       <div
         id="text"
         :class="languageStore.direction == 'ltr' ? 'left-10 md:left-20' : 'right-10 md:right-20'"

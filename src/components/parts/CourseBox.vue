@@ -2,6 +2,7 @@
 import Star from 'vue-material-design-icons/Star.vue'
 import { toRefs } from 'vue'
 import { useLanguageStore } from '../../stores/store.js'
+import VLazyImage from 'v-lazy-image'
 const languageStore = useLanguageStore()
 
 const props = defineProps({
@@ -17,7 +18,12 @@ const { text, image, price, author, authImage } = toRefs(props)
 <template>
   <div class="w-fit" :dir="languageStore.direction">
     <div class="relative">
-      <img :src="image" alt="" class="w-[300px] h-[300px]" />
+      <v-lazy-image
+        src-placeholder="/images/logo.png"
+        :src="image"
+        alt=""
+        class="w-[300px] h-[300px]"
+      />
       <div
         id="price"
         :class="languageStore.direction == 'ltr' ? 'right-6' : 'left-6'"
